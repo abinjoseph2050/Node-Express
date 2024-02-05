@@ -1,4 +1,5 @@
-function Token(req, res, next){
+//if only one function is available to export
+module.exports = function Token(req, res, next){
     console.log('Creating Token...');
     setInterval( ()=> {
         const TOKEN = 123;
@@ -6,5 +7,3 @@ function Token(req, res, next){
         next()
     }, 2000)
 }
-
-module.exports = Token;
