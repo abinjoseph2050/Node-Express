@@ -15,6 +15,7 @@ const middleware = [token, validate]
 app.get('/home', middleware, (req, res) => {
     res.send('<h1>Home</h2>')
     console.log('user logged')
+    console.log(req.token)
 })
 
 app.get('/profile', (req, res) => {
