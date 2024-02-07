@@ -7,3 +7,4 @@ function Validate(req, res, next){
 }
 
 module.exports = Validate; 
+// module.exports = [Validate, Validate2]; 
